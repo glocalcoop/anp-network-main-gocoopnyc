@@ -1,0 +1,134 @@
+/*
+Theme Name: Go Coop NYC
+Theme URI: https://github.com/glocalcoop/anp-network-main-gocoopnyc
+Author: Pea, Glocal
+Author URI: http://glocal.coop
+Description: Custom child theme for ANP main network site
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: anp-network-main-gocoopnyc
+Template: anp-network-main
+Tags:
+
+*/
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+/**
+ * Color variables
+ */
+/**
+ * Uncomment and change as desired.
+ */
+/**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+/**
+ * Elements
+ */
+/**
+ * Lists
+ */
+/**
+ * Navigation
+ */
+/**
+ * Modules
+ */
+/**
+ * Buttons
+ */
+/**
+ * Elements
+ */
+/**
+ * Utilities
+ */
+/**
+ * Extends
+ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+body {
+  background-color: #f5f3f0;
+  color: #f5f3f0; }
+
+a {
+  color: #3babad; }
+  a:hover, a:focus {
+    color: #2e8587; }
+  a:visited {
+    color: #3babad; }
+
+/*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+/**
+ * Plugins
+ */
+/*--------------------------------------------------------------
+# Theme
+--------------------------------------------------------------*/
+/******************************************************************
+ THEME - Default
+******************************************************************/
+/* for sites that are read right to left (i.e. hebrew) */
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
+/*--------------------------------------------------------------
+# Hacks
+--------------------------------------------------------------*/
+/**
+ * Stylesheet reserved just for your hacky code
+ * http://csswizardry.com/2013/04/shame-css/
+ */

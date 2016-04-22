@@ -1,0 +1,57 @@
+/*
+Theme Name: Go Coop NYC
+Theme URI: https://github.com/glocalcoop/anp-network-main-gocoopnyc
+Author: Pea, Glocal
+Author URI: http://glocal.coop
+Description: Custom child theme for ANP main network site
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: anp-network-main-gocoopnyc
+Template: anp-network-main
+Tags:
+
+*/
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+@import "variables/variables";
+@import "common/mixins";
+@import "common/extends";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "common/common";
+
+/*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import "pages/pages";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+@import "plugins/plugins";
+
+/*--------------------------------------------------------------
+# Theme
+--------------------------------------------------------------*/
+@import "theme/theme";
+
+/*--------------------------------------------------------------
+# Hacks
+--------------------------------------------------------------*/
+@import "common/shame";
+

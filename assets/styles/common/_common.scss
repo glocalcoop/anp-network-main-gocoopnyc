@@ -1,0 +1,72 @@
+html {}
+
+*,
+*:before,
+*:after {}
+
+body {
+	background-color: $color__background-body;
+	color: $color__foreground;
+}
+
+blockquote, q {
+	&:before,
+	&:after {}
+}
+
+a {
+	color: $color__link;
+	&:hover,
+	&:focus {
+		color: $color__link-hover;
+	}
+
+	&:visited {
+		color: $color__link-visited;
+	}
+}
+
+hr {}
+
+ul, ol {}
+
+ul {}
+
+ol {}
+
+li > ul,
+li > ol {}
+
+dt {}
+
+dd {}
+
+img {}
+
+table {}
+
+.entry-meta,
+.meta,
+.pagination {}
+
+time.updated {}
+
+.entry-content,
+.entry-summary,
+.comment-content {
+	ul,
+	ol {}
+	li {
+		> ul {}
+		> ol {}
+	}
+
+	blockquote {
+		&.alignleft,
+		&.alignright {}
+		> ul {}
+		> ol {}
+		&:not(.alignleft):not(.alignright) {}
+		blockquote:not(.alignleft):not(.alignright) {}
+	}
+}
