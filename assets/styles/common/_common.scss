@@ -1,12 +1,16 @@
-html {}
+html {
+	height: 100%;
+}
 
 *,
 *:before,
 *:after {}
 
 body {
+	height: 100%;
 	background-color: $color__background-body;
 	color: $color__foreground;
+	font-family: $font__main;
 }
 
 blockquote, q {
