@@ -1,6 +1,53 @@
-$font__sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ex-bold: 800;
+$light: 300;
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("dist/fonts/OpenSans-Regular.woff");
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("dist/fonts/OpenSans-Italic.woff");
+    font-style: italic;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("dist/fonts/OpenSans-Bold.woff");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("dist/fonts/OpenSans-BoldItalic.woff");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("dist/fonts/OpenSans-ExtraBold.woff");
+    font-weight: $ex-bold;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("dist/fonts/OpenSans-ExtraBoldItalic.woff");
+    font-weight: $ex-bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("dist/fonts/OpenSans-Light.woff");
+    font-weight: $light;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("dist/fonts/OpenSans-LightItalic.woff");
+    font-weight: $light;
+    font-style: italic;
+}
+
+
+$font__sans-serif: "OpenSans", Helvetica, Verdana, sans-serif;
 $font__serif: Georgia, "Times New Roman", Times, serif;
-$font__mono: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__mono: "Courier New", Courier, monospace;
 $font__main: $font__sans-serif;
 $font__heading: $font__sans-serif;
 $font__code: $font__mono;
@@ -8,6 +55,18 @@ $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;;
 $font__line-height-headings: 1.2;
+
+
+
+// TYPOGRAPHY
+
+$sans: "OpenSans", Helvetica, Verdana, sans-serif;
+$mono: "Courier New", Courier, monospace;
+$tracking: 1px;
+$tracking-loose: 2px;
+
+$main-sprite: url(dist/images/ceanyc-sprite.png);
+
 
 // SPACING
 

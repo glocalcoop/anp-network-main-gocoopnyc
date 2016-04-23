@@ -52,7 +52,7 @@ $colors__theme: (
   'primary': #31a2b9, 
   'accent': #8bbb1a,
   'secondary':  #3babad,
-  'foreground': #f5f3f0,
+  'foreground': $color__darkest-grey,
   'background': #f5f3f0
 );
 
@@ -103,10 +103,11 @@ $color__linkedin: color($colors__social, 'linkedin');
 $color__google-plus: color($colors__social, 'google-plus');
 $color__youtube: color($colors__social, 'youtube');
 
+$color__transparent: transparent;
 
 $color__background-body: $color__background;
 $color__background-header: $color__primary;
-$color__background-content: transparent;
+$color__background-content: $color__transparent;
 $color__background-footer: $color__tertiary;
 $color__background-hr: $color__light-grey;
 $color__background-hr-alt: rgba($color__black,.3);
