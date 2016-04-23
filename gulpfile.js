@@ -90,13 +90,18 @@ gulp.task('images', function(){
     .pipe( notify( { message: 'Images task complete' } ) );
 });
 
+
 gulp.task('sprites', function () {
   return sprity.src({
-    src: paths.sprites + '*.{jpg,png}',
+    src: './assets/images/sprites/*.{png,jpg}',
+    style: './_sprites.scss',
     split: true,
-    processor: 'scss', // make sure you have installed sprity-sass 
+    name: 'sprites',
+    // ... other optional options 
+    // for example if you want to generate scss instead of css 
+    processor: 'sass', // make sure you have installed sprity-sass 
   })
-  .pipe(gulpif('*.png', gulp.dest(paths.spritesOutput), gulp.dest('./assets/styles/components')))
+  .pipe(gulpif('*.png', gulp.dest('./dist/images/'), gulp.dest('./assets/styles/components')))
 });
 
 
@@ -122,4 +127,4 @@ gulp.task( 'watch', function() {
     gulp.watch( paths.libs, [ 'libs' ] );
 } );
 
-gulp.task( 'default', [ 'watch', 'styles', 'scripts', 'images', 'fonts', 'libs'], function() {});
+gulp.task( 'default', [ 'watch', 'styles', 'scripts', 'sprites', 'images', 'fonts', 'libs'], function() {});
