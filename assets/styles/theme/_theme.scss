@@ -3,6 +3,346 @@
 ******************************************************************/
 
 
+.js .search-form {
+    display: none;
+    max-height: none;
+}
+
+#masthead {
+    .site-branding {
+        padding-top: 0;
+        padding-bottom: 0;
+        .site-logo-link .site-logo {
+            width: 77px;
+            height: auto;
+        }
+        .site-branding-container .site-description {
+            @include screen-reader-text;
+        }
+    }
+}
+
+@include breakpoint(md) {
+
+    #masthead {
+
+        background-color: $color__white;
+
+        .header-container {
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .main-navigation-container {
+            width: 100%;
+            margin: 0;
+        }
+
+        .site-branding {
+            flex: 0 0 77px;
+        }
+        .main-navigation {
+            flex: 0 0 calc(100% - 77px);
+            border-top: none;
+        }
+    }
+
+}
+
+#news-module {
+    display: none;
+}
+
+.singular-page {
+    .site-content {
+        background: $color__transparent url('dist/images/sprites/ceanyc-bkgd.png') no-repeat top right;
+        width: 100%;
+        height: 100%;
+    }
+    &.home .site-content {
+        background-color: $color__transparent;
+        padding: 0;
+    }
+}
+.crm-container {
+    .crm-section {
+        .content {
+            padding: inherit;
+        }
+        .label {
+            width: auto !important;
+        }
+    }
+    fieldset legend {
+        padding: 0 0 15px;
+    }
+}
+
+.page-title,
+.archive-title,
+.section-title {
+    @include font-size($h2);
+    text-transform: capitalize;
+}
+
+.crm-submit-buttons input[type="submit"] {
+    background: $color__secondary none repeat scroll 0 0 !important;
+    padding: 15px !important;
+}
+
+
+// Homepage
+.highlights .module-heading {
+    background: $color__mid-light-grey url('dist/images/brochure-graphic.jpg') no-repeat center center;
+}
+
+.home {
+    .site-content {
+        background-image: none;
+    }
+
+    .entry.intro-content {
+        background-image: none;
+        color: $color__foreground;
+        text-shadow: 1px 1px $color__lightest-grey;
+        padding: 0;
+
+        .entry-content {
+            border-top: 2px solid $color__accent;
+            border-bottom: 2px solid $color__accent;
+            background-color: $color__white;
+
+            h3 {
+                @include font-size($h3);
+                color: $color__foreground;
+                em {
+                    color: $color__primary;
+                    display: block;
+                    font-family: $font__sans-serif;
+                    font-weight: bold;
+                    font-style: normal;
+                }
+            } 
+        }
+    }
+
+}
+
+
+@include breakpoint(md) {
+    .home .entry.intro-content {
+        background: $color__transparent url('dist/images/sprites/ceanyc-hero.png') no-repeat 0 0;
+        padding: 1.5em;
+
+        .entry-content {
+            margin-top: 12%;
+            margin-left: 38%;
+            border-top: none;
+            border-bottom: none;
+            background-color: $color__transparent;
+
+            h3 {
+                @include font-size($h2);
+                em {}
+            } 
+        }
+
+    }
+}
+
+.home-modules {
+    padding: 0;
+    .row {
+        border: 0 none;
+        padding: 0;
+        &.widget_text {
+            background: $color__light-grey none repeat scroll 0 0;
+            padding: 5% 15%;
+            text-align: center;
+        }
+    }
+}
+
+.home-widgets .widget {
+    padding: 0;
+    margin: 0;
+
+    .wrap {
+        padding: 0;
+        margin: 0;
+    }
+
+    .so-panel {
+        margin: 0 !important;
+    }
+}
+
+.mission-statement {
+    padding: 3em 5em;
+    background-color: $color__light-grey;
+}
+
+.become-member-cta {
+    background: $color__accent url('dist/images/sprites/ceanyc-banner.png') no-repeat center center;
+    margin: 0;
+    padding: 0;  
+    height: 125px;
+    width: 100%;
+    text-align: center;   
+
+    a {
+        display: block;
+        vertical-align: middle;
+        line-height: 125px;
+        @include font-size($h3);
+        color: $color__white;
+    }
+}
+
+header.header-global {
+    background-color: $color__white;
+    border-bottom: 1px solid $color__primary;
+
+    h1.site-title {
+        height: 56px;
+        width: 85px;
+        min-width: 85px;
+        margin: 0;
+        text-indent: -9999px
+    }
+}
+
+
+// Nav
+.site-header {
+
+    .header-menu,
+    .header-menu.active {
+        margin-top: .5em;
+        background-color: transparent;
+
+        li {
+            background-color: $color__white;
+
+            &:hover,
+            &:focus {
+                background-color: $color__light-grey !important;
+
+                a {
+                    &:link,
+                    &:active,
+                    &:visited {
+                        color: darken($color__foreground, 20%);
+                    }
+                }
+            }
+            a {
+                color: $color__foreground;
+                font-family: $font__sans-serif;
+
+                &:link,
+                &:active,
+                &:visited {
+                    color: $color__foreground;
+                }
+            }
+
+        }
+    }
+
+    .main-nav.active {
+        width: 92%;
+        left: 1em;
+    }
+    
+}
+
+@include breakpoint(md) {
+    header.site-header {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .header-menu {
+        &.active {
+           box-shadow: none; 
+        }
+
+        li {
+            &:hover,
+            &:focus {
+                background-color: $color__transparent !important;
+                a {
+                    color: $color__primary !important;
+                }
+            }
+        }
+    }
+    .nav-global {
+        
+    }
+
+}
+
+.nav-anchors {
+    .anchor-menu {
+        background-color: $color__transparent;
+        color: $color__foreground;
+        &:hover,
+        &:focus {
+            background-color: $color__transparent;
+            color: $color__foreground;
+        }
+    }
+}
+
+
+// Footer
+
+#colophon {
+    .bottom-navigation {
+        background-color: $color__mid-grey;
+    }
+    .copyright {
+        background-color: $color__light-grey;
+    }
+
+}
+
+
+.footer {
+    background-color: $color__mid-grey;
+    font-family: $font__sans-serif;
+    .tagline-NYCP {
+        color: $color__white;
+        @include font-size($h6);
+        letter-spacing: 0;
+        margin-left: 10px;
+        text-transform: capitalize;
+        vertical-align: inherit;
+    }
+}
+.footer-slug {
+    background: $color__mid-light-grey none repeat scroll 0 0;
+}
+.copyright {
+    color: $color__mid-dark-grey;
+}
+
+.footer-logo a {
+    color: $color__white;
+    @include font-size($h4);
+    span {
+        font-family: $font__sans-serif;
+        font-weight: $ex-bold;
+    }
+}
+
+
+
+
+
 .post {
     .meta {}
 }
