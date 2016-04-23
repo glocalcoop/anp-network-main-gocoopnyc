@@ -47,14 +47,9 @@ add_action( 'widgets_init', 'anp_network_main_child_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function anp_network_main_child_scripts() {
-    $parent_style = 'anp-network-main-style';
-
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'anp-child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style )
-    );
+function anp_enqueue_parent_styles() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 }
-add_action( 'wp_enqueue_scripts', 'anp_network_main_child_scripts' );
+add_action( 'wp_enqueue_scripts', 'anp_enqueue_parent_styles' );
+
 
