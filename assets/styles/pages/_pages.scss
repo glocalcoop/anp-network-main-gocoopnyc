@@ -1,1 +1,20 @@
-.home {}
+.home {
+    .entry.intro-content {
+
+        margin-bottom: 0;
+        border-top: none;
+        border-bottom: none;
+        padding-bottom: 0;
+
+    }
+
+    .home-widgets {
+        .siteorigin-widget-tinymce > p {
+            margin-top: 0;
+        }
+    }
+
+    #colophon {
+        margin-top: 0;
+    }
+}
