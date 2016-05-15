@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network Theme Child includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 1.0.2 - May 14 2016 =
+* Modified styles to remove spacing on home page
+* Fixed logo height
 
 = 1.0.1 - April 22 2016 =
 * Modified styles and images to replicate previous site
