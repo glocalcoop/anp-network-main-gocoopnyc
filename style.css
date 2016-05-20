@@ -4,7 +4,7 @@ Theme URI: https://github.com/glocalcoop/anp-network-main-gocoopnyc
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: Custom child theme for ANP main network site
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main-gocoopnyc
@@ -271,13 +271,16 @@ a {
       padding: 5% 15%;
       text-align: center; }
 
-.home-widgets .widget {
+.home-widgets .widget,
+.home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder) {
   padding: 0;
   margin: 0; }
-  .home-widgets .widget .wrap {
+  .home-widgets .widget .wrap,
+  .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder) .wrap {
     padding: 0;
     margin: 0; }
-  .home-widgets .widget .so-panel {
+  .home-widgets .widget .so-panel,
+  .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder) .so-panel {
     margin: 0 !important; }
 
 .mission-statement {

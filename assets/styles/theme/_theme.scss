@@ -165,7 +165,9 @@
     }
 }
 
-.home-widgets .widget {
+.home-widgets .widget,
+.home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder)
+ {
     padding: 0;
     margin: 0;
 
