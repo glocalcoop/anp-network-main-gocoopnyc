@@ -15,4 +15,7 @@ require get_stylesheet_directory() . '/inc/setup.php';
  */
 require get_stylesheet_directory() . '/inc/theme.php';
 
-
+/**
+ * Prevent Jetpack Publicize connections from being auto-selected
+ */
+add_filter( 'publicize_checkbox_default', '__return_false' );
